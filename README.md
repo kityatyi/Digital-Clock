@@ -7,6 +7,3 @@ Initially, all I wanted was a working digital clock, without any graphic element
 Long story short, enjoy and feel free to further enhance it should you so wish.
 
 Zsolt
-
-zsmonostor80@gmail.com
-
