@@ -1,5 +1,5 @@
-var defaultTheme = true; // declares default color theme
-var timeFormat = true; // where true = 24h and false = 12h format
+let defaultTheme = true; // declares default color theme
+let timeFormat = true; // where true = 24h and false = 12h format
 showTime();
 
 // Switches between dark and light color theme
@@ -39,11 +39,11 @@ function formatSwitcher() {
 
 // 12-hour clock
 function show12() {
-  var date = new Date(); // Date object
-  var h = date.getHours(); // 0-23
-  var m = date.getMinutes(); // 0-59
-  var s = date.getSeconds(); // 0-59
-  var session = "AM";
+  let date = new Date(); // Date object
+  let h = date.getHours(); // 0-23
+  let m = date.getMinutes(); // 0-59
+  let s = date.getSeconds(); // 0-59
+  let session = "AM";
 
   if (h === 0) {
     h = 12;
@@ -66,7 +66,7 @@ function show12() {
     s = "0" + s; // adds "0" prefix if second is less than 10
   }
 
-  var time = h + ":" + m + ":" + s + " " + session; // formats time into readable fashion
+  let time = h + ":" + m + ":" + s + " " + session; // formats time into readable fashion
 
   document.getElementById("myClockDisplay").innerText = time;
   document.getElementById("myClockDisplay").textContent = time;
@@ -75,10 +75,10 @@ function show12() {
 
 // 24-hour clock
 function show24() {
-  var date = new Date(); // Date object
-  var h = date.getHours(); // 0-23
-  var m = date.getMinutes(); // 0-59
-  var s = date.getSeconds(); // 0-59
+  let date = new Date(); // Date object
+  let h = date.getHours(); // 0-23
+  let m = date.getMinutes(); // 0-59
+  let s = date.getSeconds(); // 0-59
 
   if (h < 10) {
     h = "0" + h; // appends "0" prefix if hour is less than 10
@@ -92,7 +92,7 @@ function show24() {
     s = "0" + s; // adds "0" prefix if second is less than 10
   }
 
-  var time = h + ":" + m + ":" + s + " "; // formats time into readable fashion
+  let time = h + ":" + m + ":" + s + " "; // formats time into readable fashion
 
   document.getElementById("myClockDisplay").innerText = time;
   document.getElementById("myClockDisplay").textContent = time;
